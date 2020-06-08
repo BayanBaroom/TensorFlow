@@ -19,7 +19,7 @@ The following are all the changes coming in TensorFlow 2.0. Let's have a closer 
 ## Eager Execution
 
 
-Lack of eager execution was one of the main complaints against TensorFlow. We all can relate. Having to execute the whole graph and then trying to debug based on the errors was very tedious. Especially, since values of intermediate results haven't been accessible without printing them out by mixing in debug statements into the production code.
+Lack of eager execution was one of the main complaints against TensorFlow. We can all relate. Having to execute the whole graph and then trying to debug based on the errors was very tedious. Especially, since values of intermediate results haven't been accessible without printing them out by mixing in debug statements into the production code.
 
 With TensorFlow 2.0, eager execution is activated by default and the very cool thing is that the code nearly doesn't change. Under the hood, you are just working with so-called "EagerTensors" instead of "Tensors" but since they share the same interface, the difference is barely noticeable. Even in execution speed, the difference is hard to see. 
 
@@ -42,7 +42,7 @@ So you might think, so what? Just some imports change. But this is only one part
 
 But in addition, Keras now can make use of built-in TensorFlow functionality which wasn't possible before. For example, you can take your 1:1 Keras code and TensorFlow will scale it to a large GPU or TPU cluster. We'll have a look at this in the next chapter.
 
-For now, just follow along the video and code exercise below to get an idea how things work:
+For now, just follow along the video and code exercise below to get an idea how things work.
 
 ### Tasks
 
